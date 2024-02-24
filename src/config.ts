@@ -5,7 +5,7 @@ export const SITE: Site = {
   author: "massu",
   desc: "勉強用ブログ",
   title: "massu's blog",
-  ogImage: "astropaper-og.jpg",
+  // ogImage: "astropaper-og.jpg",
   lightAndDarkMode: false,
   postPerPage: 5,
   scheduledPostMargin: 15 * 60 * 1000, // 15 minutes
@@ -24,12 +24,6 @@ export const LOGO_IMAGE = {
 };
 
 export const SOCIALS: SocialObjects = [
-  // {
-  //   name: "Github",
-  //   href: "https://github.com/satnaing/astro-paper",
-  //   linkTitle: ` ${SITE.title} on Github`,
-  //   active: true,
-  // },
   {
     name: "Facebook",
     href: "https://github.com/satnaing/astro-paper",
