@@ -7,7 +7,7 @@ const URL = Astro.url;
 const shareLinks = [
   {
     name: "Twitter",
-    href: "https://twitter.com/intent/tweet?url=",
+    href: "https://twitter.com/masukemassun0",
     linkTitle: `Tweet this post`,
   },
 ] as const;
@@ -19,7 +19,7 @@ const shareLinks = [
     {
       shareLinks.map(social => (
         <LinkButton
-          href={`${social.href + URL}`}
+          href={`${social.href}`}
           className="link-button"
           title={social.linkTitle}
         >
