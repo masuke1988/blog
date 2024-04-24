@@ -1,5 +1,5 @@
 ---
-author: Sat Naing
+author: まっす
 pubDatetime: 2024-04-22T16:00:00Z
 # modDatetime: 2023-12-21T09:12:47.400Z
 title: Astroで相対パスを置換
@@ -7,7 +7,8 @@ slug: astro-repalce-relative-path
 featured: true
 draft: false
 tags:
-  - docs
+  - 相対パス
+  - Astro
 description:
   Astroで相対パスを置換
 ---
