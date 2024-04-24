@@ -3,12 +3,18 @@ layout: ../layouts/AboutLayout.astro
 title: "About"
 ---
 
-AstroPaper is a minimal, responsive and SEO-friendly Astro blog theme. I designed and crafted this based on [my personal blog](https://satnaing.dev/blog).
+## プロフィール
 
-This theme is aimed to be accessible out of the box. Light and dark mode are supported by
-default and additional color schemes can also be configured.
+大阪在住のコーダー。  
+趣味はランニング。  
 
-This theme is self-documented \_ which means articles/posts in this theme can also be considered as documentations. So, see the documentation for more info.
+5km...17:17  
+10km...35:53  
+ハーフ...79:37  
+フルマラソン...2:48:52  
+
+備忘録として残しておきたいものを書き溜めていきます。
+
 
 <div>
   <picture>
