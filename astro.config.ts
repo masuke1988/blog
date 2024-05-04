@@ -16,13 +16,13 @@ export default defineConfig({
     }),
     react(),
     sitemap(),
-    partytown(
-      {
-        config: {
-          forward: ["dataLayer.push"]
-        }
-      }
-    ),
+    // partytown(
+    //   {
+    //     config: {
+    //       forward: ["dataLayer.push"]
+    //     }
+    //   }
+    // ),
   ],
   markdown: {
     remarkPlugins: [
