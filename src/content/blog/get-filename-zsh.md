@@ -21,13 +21,13 @@ description: ディレクトリ内のファイル名を全て取得し、任意�
 ## コード(パターン1)
 
 ```zsh
-ls | awk '{print "\"sample/" $NF "\","}' 
+ls | awk '{print "\"sample/" $NF "\","}'
 
 # 「"sample/ファイル名.拡張子",」の形で表示される
 ```
 
 1. `ls`コマンドで、対象のディレクトリ内のファイルを表示。
-※事前に対象のディレクトリに移動しておく。
+   ※事前に対象のディレクトリに移動しておく。
 
 2. 「|」（パイプライン）で処理をつなぐ
 
@@ -36,7 +36,7 @@ ls | awk '{print "\"sample/" $NF "\","}'
 ## コード(パターン2)
 
 ```zsh
-find . -type f | awk -F/ '{print "\"twentytwentyfour/" $NF "\","}' 
+find . -type f | awk -F/ '{print "\"twentytwentyfour/" $NF "\","}'
 
 # 「"sample/ファイル名.拡張子",」の形で表示される
 ```
