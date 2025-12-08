@@ -77,12 +77,12 @@ description: PCとスマホで表示するブロックを切替える
 まずは必要なパッケージをインストール
 
 ```zsh
-npm install @wordpress/blocks @wordpress/hooks @wordpress/element @wordpress/components @wordpress/block-editor react react-dom --save
+yarn add @wordpress/blocks @wordpress/hooks @wordpress/element @wordpress/components @wordpress/block-editor react react-dom --save
 ```
 
 WordPress 用の型定義もインストール
 ```zsh
-npm install @types/wordpress__blocks @types/wordpress__element @types/wordpress__hooks @types/wordpress__components @types/wordpress__block-editor --save-dev
+yarn add @types/wordpress__blocks @types/wordpress__element @types/wordpress__hooks @types/wordpress__components @types/wordpress__block-editor --save-dev
 ```
 
 `tsconfig.json`を設定する
