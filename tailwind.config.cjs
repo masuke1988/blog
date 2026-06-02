@@ -18,20 +18,15 @@ module.exports = {
     },
 
     extend: {
-      textColor: {
+      colors: {
         skin: {
+          fill: withOpacity("--color-fill"),
           base: withOpacity("--color-text-base"),
           accent: withOpacity("--color-accent"),
           inverted: withOpacity("--color-fill"),
-        },
-      },
-      backgroundColor: {
-        skin: {
-          fill: withOpacity("--color-fill"),
-          accent: withOpacity("--color-accent"),
-          inverted: withOpacity("--color-text-base"),
           card: withOpacity("--color-card"),
           "card-muted": withOpacity("--color-card-muted"),
+          line: withOpacity("--color-border"),
         },
       },
       outlineColor: {

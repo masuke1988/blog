@@ -8,6 +8,7 @@ import Hr from "@components/Hr.astro";
 import Card from "@components/Card";
 // import Socials from "@components/Socials.astro";
 import getSortedPosts from "@utils/getSortedPosts";
+import { getPostsWithSlugs } from "@utils/getPostSlug";
 // import { SOCIALS } from "@config";
 
 const posts = await getCollection("blog");
@@ -15,6 +16,8 @@ const posts = await getCollection("blog");
 const sortedPosts = getSortedPosts(posts);
 const featuredPosts = sortedPosts.filter(({ data }) => data.featured);
 const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
+const featuredPostsWithSlugs = await getPostsWithSlugs(featuredPosts);
+const recentPostsWithSlugs = await getPostsWithSlugs(recentPosts);
 
 // const socialCount = SOCIALS.filter(social => social.active).length;
 ---
@@ -58,10 +61,10 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
           <section id="featured">
             <h2>Featured</h2>
             <ul>
-              {featuredPosts.map(({ data, slug }) => (
+              {featuredPostsWithSlugs.map(({ post, slug }) => (
                 <Card
                   href={`/posts/${slug}/`}
-                  frontmatter={data}
+                  frontmatter={post.data}
                   secHeading={false}
                 />
               ))}
@@ -77,12 +80,12 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
         <section id="recent-posts">
           <h2>Recent Posts</h2>
           <ul>
-            {recentPosts.map(
-              ({ data, slug }, index) =>
+            {recentPostsWithSlugs.map(
+              ({ post, slug }, index) =>
                 index < 4 && (
                   <Card
                     href={`/posts/${slug}/`}
-                    frontmatter={data}
+                    frontmatter={post.data}
                     secHeading={false}
                   />
                 )
@@ -107,7 +110,8 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
   <Footer />
 </Layout>
 
-<style>
+<style lang="postcss">
+  @reference "../styles/base.css";
   /* ===== Hero Section ===== */
   #hero {
     @apply pb-6 pt-8;

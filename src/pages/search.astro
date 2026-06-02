@@ -7,16 +7,18 @@ import Header from "@components/Header.astro";
 import Footer from "@components/Footer.astro";
 import SearchBar from "@components/Search";
 import getSortedPosts from "@utils/getSortedPosts";
+import { getPostsWithSlugs } from "@utils/getPostSlug";
 
 // Retrieve all published articles
 const posts = await getCollection("blog", ({ data }) => !data.draft);
 const sortedPosts = getSortedPosts(posts);
+const postsWithSlugs = await getPostsWithSlugs(sortedPosts);
 
 // List of items to search in
-const searchList = sortedPosts.map(({ data, slug }) => ({
-  title: data.title,
-  description: data.description,
-  data,
+const searchList = postsWithSlugs.map(({ post, slug }) => ({
+  title: post.data.title,
+  description: post.data.description,
+  data: post.data,
   slug,
 }));
 ---
