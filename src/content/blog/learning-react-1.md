@@ -8,6 +8,8 @@ featured: true
 draft: false
 tags:
   - React
+  - TypeScript
+  - 学習記録
 description:
   React学習記録です。今回はJSXとコンポーネント、Propsについて
 ---
