@@ -1,6 +1,6 @@
 ---
 author: まっす
-pubDatetime: 2026-09-09T4:00:00Z
+pubDatetime: 2026-09-09T0:00:00Z
 # modDatetime: 2023-12-21T09:12:47.400Z
 title: "CSSのレンダリングブロックを回避する media=\"print\" + onload の仕組み"
 slug: css-async-loading-media-print
