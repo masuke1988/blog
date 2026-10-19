@@ -1,6 +1,6 @@
 ---
 author: まっす
-pubDatetime: 2026-10-19T12:00:00Z
+pubDatetime: 2026-10-19T0:00:00Z
 title: "WordPressのuser_nicenameの仕組みと変更方法"
 slug: astro-repalce-relative-path
 featured: true
