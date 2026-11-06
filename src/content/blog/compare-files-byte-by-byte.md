@@ -10,7 +10,7 @@ tags:
   - ファイル差分
   - cmp
 description:
-  Astroで相対パスを置換
+  cmpで2つのファイルが完全に同じか確認し、xxdやcat -vetで改行・TABなどのバイト単位の差分を調べる方法
 ---
 
 ## Table of contents
