@@ -1,8 +1,8 @@
 ---
 author: まっす
-pubDatetime: 2026-10-19T0:00:00Z
+pubDatetime: 2026-10-19T00:00:00Z
 title: "WordPressのuser_nicenameの仕組みと変更方法"
-slug: astro-repalce-relative-path
+slug: wordpress-user-nicename-rest-api
 featured: true
 draft: false
 tags:
